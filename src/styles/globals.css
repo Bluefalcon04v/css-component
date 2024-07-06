@@ -4,9 +4,18 @@
 
 body{
     background-image: url("../../public/Images/bg-img1.jpg");
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
+}
+
+.glass-container{
+    background-color: #f0f8ff0a;
+    backdrop-filter: sepia(0);
+    backdrop-filter: blur(6px);
+    border-radius: 1em;
 }
