@@ -1,9 +1,9 @@
 import { Navbar } from "./Navbar";
-import { Buttons } from "./Buttons";
+import { Button1 } from "./Buttons";
 
 export {
     Navbar,
-    Buttons,
+    Button1,
 }
 
 export * from "./Navbar" 
