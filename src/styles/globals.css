@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: white;
-}
-
-html{
-  background-color: black;
+body{
+    background-image: url("../../public/Images/bg-img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    height: 100vh;
 }
