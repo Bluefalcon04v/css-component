@@ -12,9 +12,9 @@ export const Button = ({ btnTitle, type }: any) => {
         </div>
     )
     if (type === 'button2') return (
-        <div className='flex flex-col'>
-            <div >
-
+        <div className='flex flex-col '>
+            <div id='btn2' className='relative p-1 border-2 uppercase cursor-pointer px-4 rounded-full self-center'>
+                <div id='text2' className=''> <p>Work</p></div>
             </div>
             <BtnTitle btnTitle={btnTitle} />
         </div>
