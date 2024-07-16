@@ -26,6 +26,16 @@ body {
   font-style: italic;
 }
 
+.box-container{
+  border: 2px solid white;
+  height: 40vh;
+  width: 30vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* +++++++++++++++++++++++++++ Buttons +++++++++++++++++++++++++++ */
 
 /* -----------------------------  BUTTON 2 --------------------------- */
 #btn2{
@@ -59,4 +69,45 @@ body {
 #btn2:hover p{
   color: black;
   font-weight: 600;
+}
+
+
+/* +++++++++++++++++++++++++++ BGAnimateComp +++++++++++++++++++++++++++ */
+/* -------------------------- bg-anim1 --------------------------  */
+.bg-anim-class1 {
+  height: 40%;
+  width: 60%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  background-color: orangered;
+}
+
+#bg-anim3{
+  border-radius: 50%;
+  height: 50%;
+  width: 25%;
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+#bg-anim2{
+  animation-name: anime;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes anime {
+  from {
+    transform: translate(-10%, -10%);
+  }
+  to{
+    transform: translate(10%,10%);
+  }
 }
