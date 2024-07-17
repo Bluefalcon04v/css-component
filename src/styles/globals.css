@@ -9,8 +9,8 @@ body {
   background-repeat: no-repeat;
   color: white;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .glass-container {
@@ -28,7 +28,7 @@ body {
 
 .box-container{
   border: 2px solid white;
-  height: 40vh;
+  height: 20vw;
   width: 30vw;
   overflow: hidden;
   position: relative;
@@ -84,30 +84,39 @@ body {
   background-color: orangered;
 }
 
-#bg-anim3{
-  border-radius: 50%;
-  height: 50%;
-  width: 25%;
-  animation-name: anime;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-
 #bg-anim2{
-  animation-name: anime;
+  animation-name: anime1;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-@keyframes anime {
+#bg-anim3{
+  border-radius: 50%;
+  height: 50%;
+  width: 25%;
+  animation-name: anime2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
   from {
     transform: translate(-10%, -10%);
   }
   to{
     transform: translate(10%,10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -10%);
+  }
+  to{
+    transform: translate(0%,10%);
   }
 }
