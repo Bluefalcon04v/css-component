@@ -1,14 +1,14 @@
 import React from "react";
-import { Button } from "../components";
-import { Title } from "../components/global/title";
 import ButtonList from "../components/listing/Button-List";
-import BGAnimateComp from "../components/listing/BGAnimateComp";
+import TextList from "../components/listing/TextList";
+import BgAnimList from "../components/listing/BgAnimList";
 
 export default function Home() {
   return (
     <div className="gap-8 flex-col flex">
      <ButtonList/>
-     <BGAnimateComp/>
+     <BgAnimList/>
+     <TextList/>
     </div>
   );
 }

@@ -3,36 +3,44 @@
 @tailwind utilities;
 
 body {
-  background-image: url("../../public/Images/bg-img1.jpg");
+  width: 100%;
+  color: white;
+  min-height: 100vh;
+  background-size: cover;
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100%;
+  background-image: url("../../public/Images/bg-img1.jpg");
 }
 
 .glass-container {
-  background-color: #f0f8ff0a;
+  border-radius: 1em;
   backdrop-filter: sepia(0);
   backdrop-filter: blur(6px);
-  border-radius: 1em;
+  background-color: #f0f8ff0a;
 }
 
 .text-stroke {
+  font-style: italic;
   -webkit-text-stroke: 1px cyan;
   color: rgba(0, 255, 255, 0.288);
-  font-style: italic;
 }
 
 .box-container{
-  border: 2px solid white;
-  height: 20vw;
   width: 30vw;
+  height: 10vw;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
+  border: 2px solid white;
+}
+
+.text-container{
+  min-width: 8vw;
+  align-self: center;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid white;
 }
 
 /* +++++++++++++++++++++++++++ Buttons +++++++++++++++++++++++++++ */
@@ -43,14 +51,14 @@ body {
 }
 
 #btn2::after{
+  left: 0;
   content: "";
-  position: absolute;
   width: 100%;
   height:100%;
-  background-color: white;
-  left: 0;
   bottom: -100%;
   border-radius: 50%;
+  position: absolute;
+  background-color: white;
   transition: all ease 0.4s;
 }
 
@@ -60,10 +68,10 @@ body {
 }
 
 #text2 p{
-  position: relative;
+  z-index: 10;
   color: white;
   font-weight: 600;
-  z-index: 10;
+  position: relative;
 }
 
 #btn2:hover p{
@@ -75,32 +83,32 @@ body {
 /* +++++++++++++++++++++++++++ BGAnimateComp +++++++++++++++++++++++++++ */
 /* -------------------------- bg-anim1 --------------------------  */
 .bg-anim-class1 {
-  height: 40%;
   width: 60%;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  height: 40%;
   filter: blur(20px);
   position: absolute;
+  border-top-left-radius: 50%;
   background-color: orangered;
+  border-bottom-left-radius: 50%;
 }
 
 #bg-anim2{
   animation-name: anime1;
   animation-duration: 3s;
+  animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #bg-anim3{
-  border-radius: 50%;
-  height: 50%;
   width: 25%;
+  height: 50%;
+  border-radius: 50%;
   animation-name: anime2;
   animation-duration: 3s;
+  animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 @keyframes anime1 {
@@ -119,4 +127,40 @@ body {
   to{
     transform: translate(0%,10%);
   }
+}
+
+
+/* +++++++++++++++++++++++++++ TEXT STYLING +++++++++++++++++++++++++++++++++++++++++ */
+.textS{
+  font-size: 5vw;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+/* --------------- text1 ------------------ */
+#textS1{
+  color: transparent;
+  background-clip: text;
+  display: inline-block; 
+  background-size: cover;
+  letter-spacing: -0.5px;
+  -webkit-background-clip: text;
+  background-image: url(https://media2.giphy.com/media/HkEDr0jVekaZO/giphy.gif?cid=790b76115151ed408a9cae4539eb6351baba5d85998ab783&ct=g&rid=giphy.gif);
+}
+
+/* --------------- text2 ------------------ */
+#textS2 {
+  font-style: italic;
+  -webkit-text-stroke: 1px cyan;
+  color: rgba(0, 255, 255, 0.288);
+}
+
+/* --------------- text3 ------------------ */
+#textS3{
+  white-space: nowrap;
+  color: #f7ca05;
+  text-shadow: 0px 5px 7px rgba(0, 0, 0, 4), 0px -5px 1px #fff ;
+  /* text-shadow: 10px 4px 7px rgba(0, 0, 0, 4), 5px -4px 1px #fff ; */
+  /* text-shadow: 5px 1px 7px rgba(0, 0, 0, 4), 4px -4px 1px #fff ; */
+  letter-spacing: -3px;
 }
