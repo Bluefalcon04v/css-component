@@ -43,6 +43,15 @@ body {
   border: 2px solid white;
 }
 
+.card-container{
+  width: 28vw;
+  height: 35vw;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  border: 2px solid white;
+}
+
 /* +++++++++++++++++++++++++++ Buttons +++++++++++++++++++++++++++ */
 
 /* -----------------------------  BUTTON 2 --------------------------- */
@@ -198,4 +207,27 @@ body {
   background-clip: text;
   border: transparent;
   color: transparent;
+}
+
+
+
+/* +++++++++++++++++++++++++++ VIDEO CARD STYLING +++++++++++++++++++++++++++++++++++++++++ */
+#videoCard1-vid1{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#videoCard1-img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease-in .3s;
+}
+
+#video-container-card1:hover #videoCard1-img {
+  opacity: 0;
 }
