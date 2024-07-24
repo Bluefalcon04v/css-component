@@ -4,6 +4,7 @@ import TextList from "../components/listing/TextList";
 import BgAnimList from "../components/listing/BgAnimList";
 import { CardsList } from "../components/listing/CardsList";
 import { VideoCardList } from "../components/listing/VideoCardList";
+import { MousePointerList } from "../components/listing/MousePointerList";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
      <TextList/>
      <CardsList/>
      <VideoCardList/>
+     <MousePointerList/>
     </div>
   );
 }
