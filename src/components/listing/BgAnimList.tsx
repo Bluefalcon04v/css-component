@@ -9,6 +9,7 @@ const BgAnimList = () => {
       <div className="flex flex-wrap w-full gap-4 ">
         <BGAnimateComp type="bgAnim1" />
         <BGAnimateComp type="bgAnim2" />
+        <BGAnimateComp type="bgAnim3" />
       </div>
     </div>
   );
