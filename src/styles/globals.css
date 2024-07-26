@@ -26,7 +26,7 @@ body {
   color: rgba(0, 255, 255, 0.288);
 }
 
-.box-container{
+.box-container {
   width: 30vw;
   height: 10vw;
   overflow: hidden;
@@ -35,7 +35,7 @@ body {
   border: 2px solid white;
 }
 
-.text-container{
+.text-container {
   min-width: 8vw;
   align-self: center;
   text-align: center;
@@ -43,7 +43,7 @@ body {
   border: 2px solid white;
 }
 
-.card-container{
+.card-container {
   width: 28vw;
   height: 35vw;
   overflow: hidden;
@@ -55,15 +55,15 @@ body {
 /* +++++++++++++++++++++++++++ Buttons +++++++++++++++++++++++++++ */
 
 /* -----------------------------  BUTTON 2 --------------------------- */
-#btn2{
+#btn2 {
   overflow: hidden;
 }
 
-#btn2::after{
+#btn2::after {
   left: 0;
   content: "";
   width: 100%;
-  height:100%;
+  height: 100%;
   bottom: -100%;
   border-radius: 50%;
   position: absolute;
@@ -71,19 +71,19 @@ body {
   transition: all ease 0.4s;
 }
 
-#btn2:hover::after{
+#btn2:hover::after {
   bottom: 0;
   border-radius: 0;
 }
 
-#text2 p{
+#text2 p {
   z-index: 10;
   color: white;
   font-weight: 600;
   position: relative;
 }
 
-#btn2:hover p{
+#btn2:hover p {
   color: black;
   font-weight: 600;
 }
@@ -101,7 +101,7 @@ body {
   border-bottom-left-radius: 50%;
 }
 
-#bg-anim2{
+#bg-anim2 {
   animation-name: anime1;
   animation-duration: 3s;
   animation-direction: alternate;
@@ -109,7 +109,7 @@ body {
   animation-iteration-count: infinite;
 }
 
-#bg-anim3{
+#bg-anim3 {
   width: 25%;
   height: 50%;
   border-radius: 50%;
@@ -124,8 +124,9 @@ body {
   from {
     transform: translate(-10%, -10%);
   }
-  to{
-    transform: translate(10%,10%);
+
+  to {
+    transform: translate(10%, 10%);
   }
 }
 
@@ -133,8 +134,9 @@ body {
   from {
     transform: translate(5%, -10%);
   }
-  to{
-    transform: translate(0%,10%);
+
+  to {
+    transform: translate(0%, 10%);
   }
 }
 
@@ -163,23 +165,24 @@ body {
   0% {
     transform: scale(0) translateY(0) rotate(70deg);
   }
+
   100% {
     transform: scale(1.3) translateY(-100px) rotate(360deg);
   }
 }
 
 /* +++++++++++++++++++++++++++ TEXT STYLING +++++++++++++++++++++++++++++++++++++++++ */
-.textS{
+.textS {
   font-size: 5vw;
   padding: 0 10px;
   font-weight: bold;
 }
 
 /* --------------- text1 ------------------ */
-#textS1{
+#textS1 {
   color: transparent;
   background-clip: text;
-  display: inline-block; 
+  display: inline-block;
   background-size: cover;
   letter-spacing: -0.5px;
   -webkit-background-clip: text;
@@ -194,15 +197,15 @@ body {
 }
 
 /* --------------- text3 ------------------ */
-#textS3{
+#textS3 {
   white-space: nowrap;
   color: #f7ca05;
-  text-shadow: 0px 5px 7px rgba(0, 0, 0, 4), 0px -5px 1px #fff ;
+  text-shadow: 0px 5px 7px rgba(0, 0, 0, 4), 0px -5px 1px #fff;
   letter-spacing: -3px;
 }
 
 /* --------------- text4 ------------------  */
-#textS4{
+#textS4 {
   background-image: linear-gradient(120deg, red, blue);
   background-clip: text;
   border: transparent;
@@ -212,14 +215,14 @@ body {
 
 
 /* +++++++++++++++++++++++++++ VIDEO CARD STYLING +++++++++++++++++++++++++++++++++++++++++ */
-#videoCard1-vid1{
+#videoCard1-vid1 {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-#videoCard1-img{
+#videoCard1-img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -230,4 +233,50 @@ body {
 
 #video-container-card1:hover #videoCard1-img {
   opacity: 0;
+}
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++ CARD COMPONENTS STYLING +++++++++++++++++++++++++++++++++++++++++ */
+#card-comp1 {
+  position: relative;
+  background: #404040;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#card-comp1::after {
+  content: "asdasdasd";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* translate: -50% -50%; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* z-index: -1; */
+  padding: 3px;
+  border-radius: 10px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 70%,
+      #fff,
+      rgb(0, 128, 0),
+      #00ff00,
+      blue,
+      gray,
+      lightgray,
+      cyan,
+      pink,
+      hotpink,
+      purple,
+      violet,
+      white,
+      lightgreen,
+    );
 }
