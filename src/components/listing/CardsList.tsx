@@ -8,6 +8,7 @@ export const CardsList = () => {
       <Title title="Cards Style" />
       <div className="flex flex-wrap w-full gap-4 ">
         <CardComp type="cardComp1" />
+        <CardComp type="cardComp2" />
       </div>
     </div>
   );
