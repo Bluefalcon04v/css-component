@@ -8,13 +8,6 @@ const CardComp = ({ type }: any) => {
       </div>
     )
   } 
-  if (type === "cardComp2"){
-    return (
-      <div id="card-comp2" className="card-comp-container" >
-          Cards
-      </div>
-    )
-  } 
 };
 
 export default CardComp;

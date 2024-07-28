@@ -252,17 +252,7 @@ body {
 }
 
 /* --------------- card-comp1 ------------------  */
-#card-comp1 {
-  background: #404040;
-  color: rgb(255, 255, 255);
-  border: 4px solid transparent;
-  border-image: linear-gradient(45deg, #ffaa00, #e73205, #a8fb01, #c904f5);
-  border-image-slice: 1;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
-}
-
-/* --------------- card-comp2 ------------------  */
-#card-comp2::after {
+#card-comp1::before {
   content: "";
   position: absolute;
   width: 101%;
@@ -272,23 +262,6 @@ body {
   translate: -50% -50%;
   z-index: -1;
   padding: 10px;
-  background-color: rebeccapurple;
   border-radius: 10px;
-  background-image: conic-gradient(
-    from 0deg,
-    transparent 70%,
-      #fff,
-      rgb(0, 128, 0),
-      #00ff00,
-      blue,
-      gray,
-      lightgray,
-      cyan,
-      pink,
-      hotpink,
-      purple,
-      violet,
-      white,
-      lightgreen,
-    ); 
+  background: linear-gradient(45deg, #0033ff, #a8fb01);
 }
