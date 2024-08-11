@@ -1,3 +1,5 @@
+import { Interface } from "readline";
+
 export function* range(start:number, end?:number){
     if(end == undefined){
         end = start

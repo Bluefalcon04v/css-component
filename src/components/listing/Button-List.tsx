@@ -11,6 +11,7 @@ const ButtonList = () => {
                 <Button type="button2" btnTitle="button 2" />
                 <Button type="button3" btnTitle="button 3" />
                 <Button type="button4" btnTitle="button 4" />
+                <Button type="button5" btnTitle="button 5" />
             </div>
         </div>
     )

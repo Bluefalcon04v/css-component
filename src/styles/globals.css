@@ -127,7 +127,6 @@ body {
   position: absolute;
   transition: 0.5s;
   height: 100%;
-  content: "";
   width: 100%;
   left: -110%;
   bottom: 0;
@@ -135,7 +134,7 @@ body {
 }
 
 #btn4:hover::before{
-  content: "hover me!";
+  content: "";
   padding: 0.25rem 1rem;
   text-transform: uppercase;
   background-image: none;
@@ -145,6 +144,12 @@ body {
   left: 0%;
 }
 
+#button4-svg{
+  display: none;
+}
+
+
+/* -----------------------------  BUTTON 5 --------------------------- */
 
 
 
