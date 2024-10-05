@@ -1,10 +1,11 @@
-import React from "react";
-import ButtonList from "../components/listing/Button-List";
-import TextList from "../components/listing/TextList";
-import BgAnimList from "../components/listing/BgAnimList";
-import { CardsList } from "../components/listing/CardsList";
-import { VideoCardList } from "../components/listing/VideoCardList";
 import { MousePointerList } from "../components/listing/MousePointerList";
+import ToggleSwitcheList from "../components/listing/ToggleSwitcheList";
+import { VideoCardList } from "../components/listing/VideoCardList";
+import { CardsList } from "../components/listing/CardsList";
+import ButtonList from "../components/listing/Button-List";
+import BgAnimList from "../components/listing/BgAnimList";
+import TextList from "../components/listing/TextList";
+import React from "react";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
      <CardsList/>
      <VideoCardList/>
      <MousePointerList/>
+     <ToggleSwitcheList/>
     </div>
   );
 }
