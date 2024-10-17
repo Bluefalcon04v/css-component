@@ -1,5 +1,5 @@
 import { MousePointerList } from "../components/listing/MousePointerList";
-import ToggleSwitcheList from "../components/listing/ToggleSwitcheList";
+import ToggleSwitchList from "../components/listing/ToggleSwitchList";
 import { VideoCardList } from "../components/listing/VideoCardList";
 import { CardsList } from "../components/listing/CardsList";
 import ButtonList from "../components/listing/Button-List";
@@ -16,7 +16,7 @@ export default function Home() {
      <CardsList/>
      <VideoCardList/>
      <MousePointerList/>
-     <ToggleSwitcheList/>
+     <ToggleSwitchList/>
     </div>
   );
 }
