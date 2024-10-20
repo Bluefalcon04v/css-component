@@ -1,8 +1,8 @@
+import MousePointerComp from '@/src/components/MousePointerComp'
+import { Title } from '@/src/components/title'
 import React from 'react'
-import { Title } from '../global/title'
-import MousePointerComp from '../MousePointerComp/MousePointerComp'
 
-export const MousePointerList = () => {
+export const MousePointers = () => {
   return (
     <div className="mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden">
       <Title title="Mouse Pointers" />

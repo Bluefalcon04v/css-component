@@ -1,8 +1,8 @@
+import { TextStyling } from '@/src/components/TextStyling'
+import { Title } from '@/src/components/title'
 import React from 'react'
-import { Title } from '../global/title'
-import { TextStyling } from '../TextStyling'
 
-const TextList = () => {
+const Texts = () => {
     return (
         <div className='mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden'>
             <Title title="Text Effects" />
@@ -16,4 +16,4 @@ const TextList = () => {
     )
 }
 
-export default TextList
+export default Texts

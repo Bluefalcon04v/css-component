@@ -1,8 +1,8 @@
+import VideoComp from '@/src/components/VideoComp'
+import { Title } from '@/src/components/title'
 import React from 'react'
-import { Title } from '../global/title'
-import VideoComp from '../VideoComp/VideoComp'
 
-export const VideoCardList = () => {
+export const VideoCards = () => {
   return (
 <div className="mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden">
       <Title title="Video Card" />

@@ -1,8 +1,8 @@
+import { Button } from '@/src/components'
+import { Title } from '@/src/components/title'
 import React from 'react'
-import { Button } from '../Buttons'
-import { Title } from '../global/title'
 
-const ButtonList = () => {
+const Buttons = () => {
     return (
         <div className=" mx-auto px-8 py-8 w-11/12 glass-container">
             <Title title="Buttons" />
@@ -17,4 +17,4 @@ const ButtonList = () => {
     )
 }
 
-export default ButtonList
+export default Buttons

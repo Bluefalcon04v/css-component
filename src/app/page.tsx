@@ -1,22 +1,22 @@
-import { MousePointerList } from "../components/listing/MousePointerList";
-import ToggleSwitchList from "../components/listing/ToggleSwitchList";
-import { VideoCardList } from "../components/listing/VideoCardList";
-import { CardsList } from "../components/listing/CardsList";
-import ButtonList from "../components/listing/Button-List";
-import BgAnimList from "../components/listing/BgAnimList";
-import TextList from "../components/listing/TextList";
+import { MousePointers } from "./mousePointers/page";
+import ToggleSwitchs from "./toggleSwitches/page";
+import { VideoCards } from "./videoCards/page";
+import Backgrounds from "./backgrounds/page";
+import Buttons from "./buttons/page";
+import { Cards } from "./cards/page";
+import Texts from "./texts/page";
 import React from "react";
 
 export default function Home() {
   return (
     <div className="gap-8 flex-col flex">
-     <ButtonList/>
-     <BgAnimList/>
-     <TextList/>
-     <CardsList/>
-     <VideoCardList/>
-     <MousePointerList/>
-     <ToggleSwitchList/>
+     <Buttons/>
+     <Backgrounds url="backgrounds"/>
+     <Texts/>
+     <Cards/>
+     <VideoCards/>
+     <MousePointers/>
+     <ToggleSwitchs/>
     </div>
   );
 }
