@@ -1,8 +1,8 @@
+import CardComp from "@/src/components/Cards";
+import { Title } from "@/src/components/title";
 import React from "react";
-import { Title } from "../global/title";
-import CardComp from "../CardComp/Cards";
 
-export const CardsList = () => {
+export const Cards = () => {
   return (
     <div className="mx-auto px-8 py-8 w-11/12 glass-container ">
       <Title title="Cards Style" />

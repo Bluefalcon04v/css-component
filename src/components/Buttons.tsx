@@ -1,7 +1,6 @@
-import React from "react";
-import { BtnTitle } from "./global/title";
-import Image from "next/image";
 import Right_arrow_svg from "@/public/Svg/right-arrow-svg";
+import { BtnTitle } from "./title";
+import React from "react";
 
 export const Button = ({ btnTitle, type }: any) => {
   if (type === "button1")

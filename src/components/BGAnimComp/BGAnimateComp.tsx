@@ -1,5 +1,4 @@
 import React from 'react'
-import { Title } from '../global/title'
 import Bubble from './Bubble'
 
 export const BGAnimateComp = ({ type }: any) => {
