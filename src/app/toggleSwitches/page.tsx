@@ -1,4 +1,4 @@
-import ToggleSwitch from '@/src/components/toggleSwitch'
+import ToggleSwitch from '@/src/app/toggleSwitches/toggleSwitches'
 import { Title } from '@/src/components/title'
 import React from 'react'
 

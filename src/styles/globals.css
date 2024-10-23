@@ -154,16 +154,6 @@ body {
 
 
 /* +++++++++++++++++++++++++++ BGAnimateComp +++++++++++++++++++++++++++ */
-/* -------------------------- bg-anim1 --------------------------  */
-.bg-anim-class1 {
-  width: 60%;
-  height: 40%;
-  filter: blur(20px);
-  position: absolute;
-  border-top-left-radius: 50%;
-  background-color: orangered;
-  border-bottom-left-radius: 50%;
-}
 
 #bg-anim2 {
   animation-name: anime1;

@@ -1,10 +1,10 @@
-import { Navbar } from "./Navbar";
-import { Button } from "./Buttons";
+import { Navbar } from "./navbar";
+import Button from "./button";
 
 export {
     Navbar,
     Button,
 }
 
-export * from "./Navbar" 
-export * from "./Buttons"
+export * from "./navbar" 
+export * from "./button"
