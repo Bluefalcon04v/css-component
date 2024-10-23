@@ -1,4 +1,4 @@
-import MousePointerComp from '@/src/components/MousePointerComp'
+import MousePointerComp from '@/src/app/mousePointers/mousePointer'
 import { Title } from '@/src/components/title'
 import React from 'react'
 

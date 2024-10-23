@@ -1,8 +1,8 @@
 import Right_arrow_svg from "@/public/Svg/right-arrow-svg";
-import { BtnTitle } from "./title";
+import { BtnTitle } from "../../components/title";
 import React from "react";
 
-export const Button = ({ btnTitle, type }: any) => {
+export const ButtonsComp = ({ btnTitle, type }: any) => {
   if (type === "button1")
     return (
       <div className="flex flex-col">

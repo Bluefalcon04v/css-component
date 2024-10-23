@@ -1,5 +1,5 @@
-import VideoComp from '@/src/components/VideoComp'
 import { Title } from '@/src/components/title'
+import VideoComp from './videoCards'
 import React from 'react'
 
 export const VideoCards = () => {

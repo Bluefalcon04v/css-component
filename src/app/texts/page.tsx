@@ -1,6 +1,7 @@
-import { TextStyling } from '@/src/components/TextStyling'
 import { Title } from '@/src/components/title'
 import React from 'react'
+import { TextStyling } from './texts'
+import { Button } from '@/src/components'
 
 const Texts = () => {
     return (
@@ -12,6 +13,7 @@ const Texts = () => {
                 <TextStyling type="text3" />
                 <TextStyling type="text4" />
             </div>
+            {/* <Button url='/texts'/> */}
         </div>
     )
 }

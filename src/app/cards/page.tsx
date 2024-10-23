@@ -1,6 +1,6 @@
-import CardComp from "@/src/components/Cards";
 import { Title } from "@/src/components/title";
 import React from "react";
+import CardComp from "./cards";
 
 export const Cards = () => {
   return (
