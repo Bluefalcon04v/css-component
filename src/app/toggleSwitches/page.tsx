@@ -2,7 +2,7 @@ import ToggleSwitch from '@/src/app/toggleSwitches/toggleSwitches'
 import { Title } from '@/src/components/title'
 import React from 'react'
 
-const ToggleSwitchs = () => {
+const ToggleSwitches = () => {
   return (
     <div className='mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden'>
       <Title title="Toggle Switches" />
@@ -15,4 +15,4 @@ const ToggleSwitchs = () => {
   )
 }
 
-export default ToggleSwitchs
+export default ToggleSwitches

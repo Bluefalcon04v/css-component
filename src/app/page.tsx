@@ -1,7 +1,8 @@
 import { MousePointers } from "./mousePointers/page";
-import ToggleSwitchs from "./toggleSwitches/page";
+import ToggleSwitches from "./toggleSwitches/page";
 import { VideoCards } from "./videoCards/page";
 import Backgrounds from "./backgrounds/page";
+import DatePicker from "./datePicker/page";
 import Buttons from "./buttons/page";
 import { Cards } from "./cards/page";
 import Texts from "./texts/page";
@@ -16,7 +17,8 @@ export default function Home() {
      <Cards/>
      <VideoCards/>
      <MousePointers/>
-     <ToggleSwitchs/>
+     <DatePicker/>
+     <ToggleSwitches/>
     </div>
   );
 }
