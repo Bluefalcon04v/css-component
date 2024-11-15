@@ -1,8 +1,16 @@
-import ToggleSwitch from '@/src/app/toggleSwitches/toggleSwitches'
+'use client'
 import { Title } from '@/src/components/title'
+import { usePathname } from 'next/navigation';
+import ToggleSwitch from './toggleSwitches';
+import { Button } from '@/src/components';
 import React from 'react'
+interface IProps {
+  url: string;
+}
 
-const ToggleSwitches = () => {
+const ToggleSwitches = ({ url = '' }: IProps) => {
+  const pathname = usePathname()
+
   return (
     <div className='mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden'>
       <Title title="Toggle Switches" />
@@ -11,6 +19,7 @@ const ToggleSwitches = () => {
         <ToggleSwitch type={'type2'} />
         <ToggleSwitch type={'type3'} />
       </div>
+      {pathname !== '/toggle-switches' && <Button url={url} />}
     </div>
   )
 }
