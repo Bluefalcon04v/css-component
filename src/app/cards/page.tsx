@@ -1,8 +1,15 @@
+'use client'
 import { Title } from "@/src/components/title";
-import React from "react";
+import { usePathname } from "next/navigation";
+import { Button } from "@/src/components";
 import CardComp from "./cards";
+import React from "react";
+interface IProps {
+  url: string;
+}
 
-export const Cards = () => {
+const Cards = ({ url = '' }: IProps) => {
+  const pathname = usePathname()
   return (
     <div className="mx-auto px-8 py-8 w-11/12 glass-container ">
       <Title title="Cards Style" />
@@ -10,6 +17,8 @@ export const Cards = () => {
         <CardComp type="cardComp1" />
         <CardComp type="cardComp2" />
       </div>
+      {pathname !== '/cards' && <Button url={url} />}
     </div>
   );
 };
+export default Cards

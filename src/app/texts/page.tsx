@@ -1,9 +1,15 @@
+'use client'
 import { Title } from '@/src/components/title'
-import React from 'react'
-import { TextStyling } from './texts'
+import { usePathname } from 'next/navigation';
 import { Button } from '@/src/components'
+import { TextStyling } from './texts'
+import React from 'react'
 
-const Texts = () => {
+interface IProps {
+    url: string;
+}
+const Texts = ({ url= ""}: IProps) => {
+    const pathname = usePathname()
     return (
         <div className='mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden'>
             <Title title="Text Effects" />
@@ -13,7 +19,7 @@ const Texts = () => {
                 <TextStyling type="text3" />
                 <TextStyling type="text4" />
             </div>
-            {/* <Button url='/texts'/> */}
+            {pathname !== '/texts' && <Button url={url} />}
         </div>
     )
 }
