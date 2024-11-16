@@ -90,7 +90,7 @@ body {
 
 
 /* -----------------------------  BUTTON 3 --------------------------- */
-#btn3{
+#btn3 {
   background-color: #1c1f2b;
   color: #fff;
   overflow: hidden;
@@ -109,16 +109,16 @@ body {
   transition: 0.5s;
 }
 
-#btn3:hover::before{
+#btn3:hover::before {
   left: 100%;
 }
 
 
 /* -----------------------------  BUTTON 4 --------------------------- */
-#btn4{
+#btn4 {
   color: #fff;
   overflow: hidden;
-  background-color: #2E3192 ;
+  background-color: #2E3192;
 }
 
 #btn4::before {
@@ -133,7 +133,7 @@ body {
   top: 0;
 }
 
-#btn4:hover::before{
+#btn4:hover::before {
   content: "";
   padding: 0.25rem 1rem;
   text-transform: uppercase;
@@ -144,7 +144,7 @@ body {
   left: 0%;
 }
 
-#button4-svg{
+#button4-svg {
   display: none;
 }
 
@@ -290,7 +290,7 @@ body {
 
 
 /* +++++++++++++++++++++++++++ CARD COMPONENTS STYLING +++++++++++++++++++++++++++++++++++++++++ */
-.card-comp-container{
+.card-comp-container {
   position: relative;
   width: 300px;
   height: 200px;
@@ -317,7 +317,7 @@ body {
 
 
 /* +++++++++++++++++++++++++++ TOGGLE SWITCHES COMPONENTS STYLING +++++++++++++++++++++++++++++++++++++++++ */
-.toggle-comp-container{
+.toggle-comp-container {
   position: relative;
   width: 300px;
   height: 200px;
@@ -325,4 +325,36 @@ body {
   text-align: center;
   align-content: center;
   border-radius: 10px;
+}
+
+#toggle-switch2::after {
+  position: absolute;
+  content: "";
+  rotate: 20deg;
+  width: 20px;
+  height: 2px;
+  left: 100%;
+  top: -10px;
+  animation-name: ts-anime2;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ts-anime2 {
+  from {
+    /* transform: translate(100%, -10%); */
+    rotate: 0deg;
+    background-color: white;
+  }
+  via{
+    
+  }
+
+  to {
+    /* transform: translateY(0%, 10%); */
+    rotate: 40deg;
+    background-color: red;
+  }
 }
