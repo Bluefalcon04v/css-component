@@ -20,6 +20,7 @@ const Buttons = ({ url = "" }: IProps) => {
                 <ButtonsComp type="button3" btnTitle="button 3" />
                 <ButtonsComp type="button4" btnTitle="button 4" />
                 <ButtonsComp type="button5" btnTitle="button 5" />
+                <ButtonsComp type="button6" btnTitle="button 6" />
             </div>
             {pathname !== '/buttons' && <Button url={url}/>}
         </div>
