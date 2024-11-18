@@ -33,6 +33,7 @@ export const ButtonsComp = ({ btnTitle, type }: any) => {
         <BtnTitle btnTitle={btnTitle} />
       </div>
     );
+    
   if (type === "button3")
     return (
       <div className="flex flex-col ">
@@ -48,6 +49,7 @@ export const ButtonsComp = ({ btnTitle, type }: any) => {
         <BtnTitle btnTitle={btnTitle} />
       </div>
     );
+
   if (type === "button4")
     return (
       <div className="flex flex-col ">
@@ -57,7 +59,7 @@ export const ButtonsComp = ({ btnTitle, type }: any) => {
         >
           <div className="place-content-center flex items-center">
             <p>Hover Me!</p>
-            <Right_arrow_svg id="button4-svg" className="fill-red-50" />
+            <Right_arrow_svg id="button4-svg" className="fill-red-500" />
           </div>
         </div>
         <BtnTitle btnTitle={btnTitle} />
@@ -66,13 +68,14 @@ export const ButtonsComp = ({ btnTitle, type }: any) => {
 
   if (type === "button5")
     return (
-        <div className="bg-white w-fit pr-4 rounded-full h-10 flex place-items-center gap-1 cursor-pointer">
-          <div className="w-12 h-12 bg-[#4174A8] rounded-full flex place-content-center place-items-center border-4 border-white">
-            <svg width="18" height="18" viewBox="0 0 24 24">
+      <div className="flex flex-col">
+        <div className="bg-white w-fit pr-4 rounded-full h-10 flex place-items-center gap-1 cursor-pointer group">
+          <div className="w-12 h-12 bg-[#4174A8] rounded-full flex place-content-center place-items-center border-4 border-white ">
+            <svg width="18" height="18" viewBox="0 0 24 24" className="group-hover:h-5 group-hover:w-5 transition-all duration-500 ease-in-out">
               <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#fff" stopOpacity="1" />
-                  <stop offset="100%" stopColor="#8DACCA" stopOpacity="1" />
+                  <stop offset="0%" stopColor="#fff" className="stop-color" stopOpacity="1" />
+                  <stop offset="100%" stopColor="#8DACCA" className="stop-color" stopOpacity="1" />
                 </linearGradient>
               </defs>
               <path
@@ -85,5 +88,19 @@ export const ButtonsComp = ({ btnTitle, type }: any) => {
             Feedback
           </div>
         </div>
-      )
+        <BtnTitle btnTitle={btnTitle} />
+      </div>
+    );
+
+  if (type === "button6")
+    return (
+      <div className="flex flex-col ">
+        <div className="relative p-1 border-b-4 border-b-blue-800 uppercase cursor-pointer px-4 rounded-full self-center bg-blue-600 hover:border-b-0  hover:translate-y-1 ease-in-out duration-150  transition-all">
+          <div className="place-content-center flex items-center font-semibold">
+            Hover Me!
+          </div>
+        </div>
+        <BtnTitle btnTitle={btnTitle} />
+      </div>
+    )
 };
