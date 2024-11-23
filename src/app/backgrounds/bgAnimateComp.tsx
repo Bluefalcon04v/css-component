@@ -14,4 +14,9 @@ export const BGAnimateComp = ({ type }: any) => {
             </div>
         </div>
     )
+    if (type === "bgAnim3") return (
+        <div id='bgAnim3' className='box-container relative flex justify-center grow items-center !align-middle '>
+                <p>Hello World</p>
+        </div>
+    )
 }

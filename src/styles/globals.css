@@ -224,6 +224,27 @@ body {
   }
 }
 
+/* ----------------------------- bg-anim3 ----------------------- */
+
+#bgAnim3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/Images/bg-img1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  -webkit-mask-image: url('/gifs/ink.gif'); 
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: repeat;
+  mask-image: url('/gifs/ink.gif');
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+
 /* +++++++++++++++++++++++++++ TEXT STYLING +++++++++++++++++++++++++++++++++++++++++ */
 .textS {
   font-size: 5vw;

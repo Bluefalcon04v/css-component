@@ -16,6 +16,7 @@ const Backgrounds = ({url = ''}:IProps) => {
       <div className="flex flex-wrap w-full gap-4">
         <BGAnimateComp type="bgAnim1" />
         <BGAnimateComp type="bgAnim2" />
+        <BGAnimateComp type="bgAnim3" />
       </div>
       {pathname !== '/backgrounds'  && <div className="w-full flex place-content-end ">
         <Button url={url}/>
