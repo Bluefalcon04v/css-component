@@ -5,10 +5,7 @@ import { Button } from '@/src/components'
 import { TextStyling } from './texts'
 import React from 'react'
 
-interface IProps {
-    url: string;
-}
-const Texts = ({ url= ""}: IProps) => {
+const Texts = () => {
     const pathname = usePathname()
     return (
         <div className='mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden'>
@@ -19,7 +16,7 @@ const Texts = ({ url= ""}: IProps) => {
                 <TextStyling type="text3" />
                 <TextStyling type="text4" />
             </div>
-            {pathname !== '/texts' && <Button url={url} />}
+            {pathname !== '/texts' && <Button url={"texts"} />}
         </div>
     )
 }

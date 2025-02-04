@@ -5,10 +5,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/src/components";
 import React from "react";
 
-interface IProps {
-  url: string;
-}
-const Backgrounds = ({url = ''}:IProps) => {
+const Backgrounds = () => {
   const pathname = usePathname()
   return (
     <div className="mx-auto px-8 py-8 w-11/12 glass-container overflow-hidden">
@@ -19,7 +16,7 @@ const Backgrounds = ({url = ''}:IProps) => {
         <BGAnimateComp type="bgAnim3" />
       </div>
       {pathname !== '/backgrounds'  && <div className="w-full flex place-content-end ">
-        <Button url={url}/>
+        <Button url={"backgrounds"}/>
       </div>}
     </div>
   );
