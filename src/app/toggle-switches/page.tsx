@@ -4,11 +4,8 @@ import { usePathname } from 'next/navigation';
 import ToggleSwitch from './toggleSwitches';
 import { Button } from '@/src/components';
 import React from 'react'
-interface IProps {
-  url: string;
-}
 
-const ToggleSwitches = ({ url = '' }: IProps) => {
+const ToggleSwitches = () => {
   const pathname = usePathname()
 
   return (
@@ -19,7 +16,7 @@ const ToggleSwitches = ({ url = '' }: IProps) => {
         <ToggleSwitch type={'type2'} />
         <ToggleSwitch type={'type3'} />
       </div>
-      {pathname !== '/toggle-switches' && <Button url={url} />}
+      {pathname !== '/toggle-switches' && <Button url={"toggle-switches"} />}
     </div>
   )
 }

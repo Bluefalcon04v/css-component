@@ -4,10 +4,7 @@ import { Title } from '@/src/components/title'
 import { usePathname } from 'next/navigation';
 import { Button } from '@/src/components';
 import React from 'react'
-interface IProps {
-    url: string;
-}
-const DatePicker = ({ url = '' }: IProps) => {
+const DatePicker = () => {
     const pathname = usePathname()
 
     return (
@@ -16,7 +13,7 @@ const DatePicker = ({ url = '' }: IProps) => {
             <div className='flex gap-8 flex-wrap h-full'>
                 <DatePickerComp />
             </div>
-            {pathname !== '/date-picker' && <Button url={url} />}
+            {pathname !== '/date-picker' && <Button url={"date-picker"} />}
 
         </div>
     )

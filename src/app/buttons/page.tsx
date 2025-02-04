@@ -5,11 +5,7 @@ import { ButtonsComp } from './buttonsComp'
 import { Button } from '@/src/components'
 import React from 'react'
 
-interface IProps {
-    url: string;
-}
-
-const Buttons = ({ url = "" }: IProps) => {
+const Buttons = () => {
     const pathname = usePathname()
     return (
         <div className=" mx-auto px-8 py-8 w-11/12 glass-container">
@@ -22,7 +18,7 @@ const Buttons = ({ url = "" }: IProps) => {
                 <ButtonsComp type="button5" btnTitle="button 5" />
                 <ButtonsComp type="button6" btnTitle="button 6" />
             </div>
-            {pathname !== '/buttons' && <Button url={url}/>}
+            {pathname !== '/buttons' && <Button url={"buttons"}/>}
         </div>
     )
 }

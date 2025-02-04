@@ -12,15 +12,15 @@ import Tabs from "./tabs/page";
 export default function Home() {
   return (
     <div className="gap-8 flex-col flex">
-     <Buttons url="buttons"/>
-     <Texts url="texts"/>
-     <Backgrounds url="backgrounds"/>
-     <Cards url="cards"/>
-     <VideoCards url="video-cards"/>
-     <MousePointers url="mouse-pointers"/>
-     <Tabs url="tabs"/>
-     <DatePicker url="date-picker"/>
-     <ToggleSwitches url="toggle-switches"/>
+      <Buttons />
+      <Texts />
+      <Backgrounds />
+      <Cards />
+      <VideoCards />
+      <MousePointers />
+      <Tabs />
+      <DatePicker />
+      <ToggleSwitches />
     </div>
   );
 }

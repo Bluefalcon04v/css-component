@@ -4,11 +4,8 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/src/components";
 import CardComp from "./cards";
 import React from "react";
-interface IProps {
-  url: string;
-}
 
-const Cards = ({ url = '' }: IProps) => {
+const Cards = () => {
   const pathname = usePathname()
   return (
     <div className="mx-auto px-8 py-8 w-11/12 glass-container ">
@@ -17,7 +14,7 @@ const Cards = ({ url = '' }: IProps) => {
         <CardComp type="cardComp1" />
         <CardComp type="cardComp2" />
       </div>
-      {pathname !== '/cards' && <Button url={url} />}
+      {pathname !== '/cards' && <Button url={"cards"} />}
     </div>
   );
 };

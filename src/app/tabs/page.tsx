@@ -5,11 +5,7 @@ import { Button } from '../../components';
 import React from 'react'
 import TabsComp from './tabsComp';
 
-interface IProps {
-    url: string;
-}
-
-const Tabs = ({ url = '' }: IProps) => {
+const Tabs = () => {
     const pathname = usePathname()
     return (
         <div className="mx-auto px-8 py-8 w-11/12 glass-container ">
@@ -17,7 +13,7 @@ const Tabs = ({ url = '' }: IProps) => {
             <div className="flex flex-wrap w-full gap-4 ">
                 <TabsComp type="tabComp1"/>
             </div>
-            {pathname !== '/cards' && <Button url={url} />}
+            {pathname !== '/cards' && <Button url={"tabs"} />}
         </div>
     )
 }

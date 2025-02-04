@@ -4,10 +4,8 @@ import { Title } from '@/src/components/title'
 import { usePathname } from 'next/navigation';
 import { Button } from '@/src/components';
 import React from 'react'
-interface IProps {
-  url: string;
-}
-const MousePointers = ({ url = '' }: IProps) => {
+
+const MousePointers = () => {
   const pathname = usePathname()
 
   return (
@@ -16,7 +14,7 @@ const MousePointers = ({ url = '' }: IProps) => {
       <div className="flex flex-wrap w-full gap-4 ">
         <MousePointerComp type="mousepointer1" />
       </div>
-      {pathname !== '/mouse-pointers' && <Button url={url} />}
+      {pathname !== '/mouse-pointers' && <Button url={"mouse-pointers"} />}
     </div>
   )
 }
