@@ -7,16 +7,18 @@ import Buttons from "./buttons/page";
 import Cards from "./cards/page";
 import Texts from "./texts/page";
 import React from "react";
+import Tabs from "./tabs/page";
 
 export default function Home() {
   return (
     <div className="gap-8 flex-col flex">
      <Buttons url="buttons"/>
-     <Backgrounds url="backgrounds"/>
      <Texts url="texts"/>
+     <Backgrounds url="backgrounds"/>
      <Cards url="cards"/>
      <VideoCards url="video-cards"/>
      <MousePointers url="mouse-pointers"/>
+     <Tabs url="tabs"/>
      <DatePicker url="date-picker"/>
      <ToggleSwitches url="toggle-switches"/>
     </div>
